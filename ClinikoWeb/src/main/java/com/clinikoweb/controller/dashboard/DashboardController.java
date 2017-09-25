@@ -15,6 +15,11 @@ public class DashboardController {
 	      return "index";
 	   }
 
+	@RequestMapping("/dashboard")
+	   public String dashboard() {
+	      return "dashboard";
+	   }
+
 	   @PostMapping("/hello")
 	   public String sayHello(@RequestParam("name") String name, Model model) {
 	      model.addAttribute("name", name);
