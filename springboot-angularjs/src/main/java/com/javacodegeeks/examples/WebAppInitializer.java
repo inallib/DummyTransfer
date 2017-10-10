@@ -2,12 +2,14 @@ package com.javacodegeeks.examples;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
+//@Configuration
 @EnableAutoConfiguration
-@ComponentScan("com.javacodegeeks.examples")
+//@ComponentScan("com.javacodegeeks.examples")
+@SpringBootApplication
 public class WebAppInitializer{
 
     public static void main(String[] args) throws Exception{
