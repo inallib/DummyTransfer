@@ -40,10 +40,10 @@ The test case include controller test with Mock. To run the test cases, open \sr
 ### Assumptions
 ```
 - Only one runtime to be used among Java / Scala/ NodeJs.
-- Rest endpoints will be used only to this application UI and not to Mobile / Tablet etc.
+- Rest endpoints that will be used only to this application UI and not to Mobile / Tablet etc.
 - No other modules be added to the application.
 - This application be run only in desktop and in development mode.
-- Making architecture a microservices based one and take care of problem of common microservice based application has would be considered as over engineering.
+- Making architecture a microservices based one and taking care of the problems in common microservice based application has, would be considered as over engineering.
 - Separating the backend in Java and UI in Node based app would be considered as over engineering.
 - Introducing caching would be consider as over engineering.
 ```
@@ -67,5 +67,5 @@ To Build this application
 ```
 - Coverage of Unit test cases are less in the interest of time.
 - Acceptance test are something to write in the later stage.
-- In order to fire each URL on the page, this may be extended to a multi threaded parallel solution to handle it rather than just a simple sequential operation.
+- In order to fire each URL on the page, currently its a sequential mechanism. Which causes lot of performance issue. To solve this a multi threaded parallel solution to be introduced rather than just a simple sequential one.
 ```
